@@ -82,5 +82,7 @@ test:
 production:
   <<: *default
   database: pharmacy_api_production
-  username: pharmacy_api
-  password: <%= ENV["PHARMACY_API_DATABASE_PASSWORD"] %>
+  username: <%= Rails.application.credentials.db_username %>
+  password: <%= Rails.application.credentials.db_password %>
+  host: <%= Rails.application.credentials.db_host %>
+  port: <%= Rails.application.credentials.db_port %>
