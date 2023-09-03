@@ -1,5 +1,0 @@
-commands:
-  01_set_tmp_permissions:
-    command: "sudo chown -R ec2-user:ec2-user /var/app/ > /var/log/chown_output2.log 2>&1"
-  02_test_command:
-    command: "touch /tmp/test_command_ran2.txt"
